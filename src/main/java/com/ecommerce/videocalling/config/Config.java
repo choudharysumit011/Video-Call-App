@@ -15,7 +15,7 @@ public class Config {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/v1/users","/api/v1/users/login","/api/v1/users/logout").permitAll()
+                        .requestMatchers("/api/v1/users/register","/api/v1/users/login","/api/v1/users/logout","/login.html", "/register.html","/index.css","/style.css").permitAll()
                         .anyRequest().permitAll()
                 );
         return http.build();

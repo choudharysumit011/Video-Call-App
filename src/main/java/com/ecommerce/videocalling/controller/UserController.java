@@ -22,7 +22,7 @@ public class UserController {
 
     private final UserService service;
 
-    @PostMapping
+    @PostMapping("/register")
     public ResponseEntity<ObjectNode> register(
             @RequestBody User user
     ) {
