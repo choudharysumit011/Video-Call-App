@@ -13,7 +13,7 @@ function handleRegistration(event) {
         password: password,
     };
 
-    fetch('http://localhost:8080/api/v1/users/register', {
+    fetch('http://localhost:8081/api/v1/users/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
